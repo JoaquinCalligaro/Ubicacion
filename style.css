@@ -1,0 +1,162 @@
+/* Estilos generales */
+body {
+  background-color: #380023;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #ffffff;
+}
+
+hr {
+  width: 100%;
+  height: 5px;
+  background-color: #ffffff;
+  border: none;
+}
+
+/* Estilos para el contenedor */
+
+#contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (min-width: 480px) {
+  #contenedor {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+/* Estilos para el recuadro */
+#recuadro {
+  width: 100%;
+  max-width: 800px;
+  height: 40%;
+  background-color: #001048;
+  border: 6px solid #00d9ff;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 480px) {
+  #recuadro {
+    width: 45%;
+    margin: 20px 10px;
+    float: right;
+  }
+}
+
+/* Estilos para el mapa */
+.map {
+  position: relative;
+  padding-bottom: 75%; 
+  height: 0;
+  overflow: hidden;
+  height: 30%;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 0;
+  height: 40%;
+}
+
+/* Estilos para la recuadro,mapa,ubicación y el enlace */
+.map iframe{
+  height: 70%;
+}
+
+#recuadro{
+  height: 40%;
+} 
+.ubicacion {
+  font-size: 1em;
+  color: #1E90FF;
+  margin-top: -40px;
+}
+
+.enlace-ubicacion {
+  color: #1E90FF;
+  text-decoration:none;
+  margin-top: 10px;
+}
+
+.icono {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.icono img {
+  width: 40px;
+  height: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .map iframe{
+    height: 45%;
+  }
+  #recuadro{
+    height: 40%;
+  } 
+  .ubicacion {
+    font-size: 1em;
+    margin-top: -40%;
+  }
+
+  .enlace-ubicacion {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .map iframe{
+    height: 40%;
+  }
+
+  #recuadro{
+    height: 45%;
+  }
+  .ubicacion {
+    font-size: 1em;
+    margin-top: -42%;
+  }
+
+  .enlace-ubicacion {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .map iframe{
+    height: 40%;
+  }
+  #recuadro{
+    height: 45%;
+  }
+
+  .ubicacion {
+    font-size: 1em;
+    margin-top: -42%;
+  }
+
+  .enlace-ubicacion {
+    font-size: 1.2em;
+    
+  }
+}
